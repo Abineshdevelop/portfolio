@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar-nav li:hover{
+    border-bottom: 5px solid red;
+}
+.loader::after{
+    color: red;
+    content: "";
+    animation-name: anitext;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+}
+@keyframes anitext{
+    0%{content: "f";}
+    20%{content: "fo";}
+    40%{content: "fol";}
+    60%{content: "foli";}
+    80%{content: "folio";}
+}
+.img-fluid{
+    width: 600px;
+    height: 700px;
+    margin-top: 90px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 20% 50% 10% 20%;
+    filter: drop-shadow(1px 1px 20px rgb(255, 0, 0));
+}
+.t-color{
+    color: white;
+}
+.dev{
+    color: red;
+}
+.dev::after{
+    color: red;
+    content: "";
+    animation-name: abitext;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+}
+@keyframes abitext{
+    0%{content: "D";}
+    10%{content: "DE";}
+    20%{content: "DEV";}
+    30%{content: "DEVE";}
+    40%{content: "DEVEL";}
+    50%{content: "DEVELO";}
+    80%{content: "DEVELOP";}
+    90%{content: "DEVELOPE";}
+    100%{content: "DEVELOPER";}
+}
